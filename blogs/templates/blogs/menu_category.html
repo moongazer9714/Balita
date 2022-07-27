@@ -1,0 +1,8 @@
+<div class="sidebar-box">
+    <h3 class="heading">Categories</h3>
+    <ul class="categories">
+        {% for category in categories %}
+        <li><a href="{% url 'get-category' category.id %}?category={{ category }}">{{ category.title }} <span>({{category.n}})</span></a></li>
+        {% endfor %}
+    </ul>
+</div>

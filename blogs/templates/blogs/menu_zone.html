@@ -1,0 +1,5 @@
+<div class="{{ menu_class }}" aria-labelledby="dropdown04">
+    {% for i in cat_zones %}
+    <a class="dropdown-item" href="{% url 'category-zone' i.id %}?categorybyzone={{ i }}">{{ i.title }}</a>
+    {% endfor %}
+</div>
